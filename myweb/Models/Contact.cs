@@ -5,10 +5,15 @@ using System.Threading.Tasks;
 
 namespace myweb.Controllers.Models
 {
-    public class contact
+    public class Contact
     {
         public int Id { get; set; }
         public String FirstName { get; set; }
-        public DateTime dateCreated { get; set; } = DateTime.Now;
+        public DateTime DateCreated { get; set; } = DateTime.Now;
+        public bool IsDeleted { get; set; } = false;
+
+        // public int MyProperty { get; set; }
+       
+
     }
 }
